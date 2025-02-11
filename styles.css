@@ -147,6 +147,26 @@ h2 {
     .profile-section {
         margin-bottom: 2rem;
     }
+
+    /* 导航栏移动端优化 */
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .nav-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-right a {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
 }
 
 .nav-left h1 {
