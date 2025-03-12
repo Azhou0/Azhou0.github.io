@@ -1,31 +1,34 @@
 :root {
-    --primary-color: #2196F3;
-    --nav-bg: #1a1f36;
-    --text-color: #2c3e50;
-    --bg-color: #f8f9fa;
+    --primary-color: #1a1a1a;
+    --nav-bg: #000000;
+    --text-color: #1a1a1a;
+    --bg-color: #fafafa;
     --secondary-bg: #ffffff;
-    --border-color: #e1e8ed;
-    --hover-color: rgba(33, 150, 243, 0.1);
-    --gradient-start: #2196F3;
-    --gradient-end: #21CBF3;
+    --border-color: #e5e5e5;
+    --hover-color: rgba(0, 0, 0, 0.03);
+    --gradient-start: #1a1a1a;
+    --gradient-end: #4a4a4a;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.4rem 2rem;
     background-color: var(--nav-bg);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    height: 3.5rem;
 }
 
 .container {
@@ -57,6 +60,8 @@ h2 {
     margin: 0;
     color: var(--text-color);
     font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 .profile-image img {
@@ -78,7 +83,7 @@ h2 {
 .social-links a {
     color: var(--primary-color);
     text-decoration: none;
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.2s ease;
     border: 1px solid transparent;
@@ -121,7 +126,8 @@ h2 {
 
 .experience-item h4, .achievement-item h4 {
     margin: 0 0 0.5rem 0;
-    color: var(--primary-color);
+    color: #222;
+    font-weight: 600;
 }
 
 .time {
@@ -194,21 +200,22 @@ h2 {
 .nav-right a {
     color: white;
     text-decoration: none;
-    padding: 0.8rem 1.2rem;
+    padding: 0.5rem 1rem;
     margin-left: 1.5rem;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+    border-radius: 4px;
+    transition: all 0.2s ease;
     font-weight: 500;
     letter-spacing: 0.3px;
-    background: transparent;
-    border: 2px solid var(--gradient-start);
-    box-shadow: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .nav-right a:hover {
     transform: translateY(-1px);
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .publication-item {
@@ -220,7 +227,7 @@ h2 {
 
 .coming-soon {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    color: #222;
     margin-bottom: 1rem;
 }
 
@@ -232,6 +239,8 @@ h2 {
 h3, h4 {
     color: var(--text-color);
     margin-bottom: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 /* 兴趣爱好样式 */
@@ -325,7 +334,7 @@ h3, h4 {
 }
 
 .email-container a {
-    color: var(--primary-color);
+    color: #444;
     text-decoration: none;
     transition: opacity 0.2s ease;
     font-size: 0.95rem;
@@ -335,4 +344,26 @@ h3, h4 {
 
 .email-container a:hover {
     opacity: 0.8;
+}
+
+.more-about-me-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.more-about-me-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.more-about-me-item p {
+    margin-bottom: 1rem;
+}
+
+.more-about-me-item p:last-child {
+    margin-bottom: 0;
 }
