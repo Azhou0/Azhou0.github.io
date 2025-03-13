@@ -26,9 +26,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    flex-wrap: wrap; /* 添加这行 */
+    background-color: var(--nav-bg); /* 修改这行 */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
 }
 
 .nav-left h1 {
