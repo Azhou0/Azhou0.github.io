@@ -257,10 +257,36 @@ h2 {
 }
 
 .publication-item {
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: var(--secondary-bg);
     border-radius: 8px;
-    text-align: center;
+    text-align: left; /* 改为左对齐 */
+    margin-bottom: 1.5rem;
+}
+
+.publication-item h4 {
+    font-size: 1rem; /* 标题字体变小 */
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.publication-item .authors {
+    font-size: 0.85rem; /* 作者字体更小 */
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.publication-item .venue {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+}
+
+.publication-item .note {
+    font-size: 0.8rem;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 .coming-soon {
